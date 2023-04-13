@@ -9367,11 +9367,11 @@ html, body {
 }
 
 /*이미지 경로 : 추후 절대 경로로 변경@@@@@@@@@@@@@@@@@@@@@@*/
-/*$fz-xs : 14px; 
-$fz-sm : 16px; 
+/*$fz-xs : 14px;
+$fz-sm : 16px;
 $fz-md : 18px; //default
-$fz-lg : 20px; 
-$fz-lg : 20px; 
+$fz-lg : 20px;
+$fz-lg : 20px;
 $fz-xg : 28px; */
 /*$light-line-color : #333;
 $base-line-color : #666;
@@ -13565,12 +13565,12 @@ html, body {
 /**
 * visual
 * ------------------
-* login : 로그인 
-* member : 회원가입 
-* good : 일하기 좋은 
-* about : 두산에 대하여 
-* job : 직무 알아보고 
-* apply : 입사지원하기 
+* login : 로그인
+* member : 회원가입
+* good : 일하기 좋은
+* about : 두산에 대하여
+* job : 직무 알아보고
+* apply : 입사지원하기
 * my : 마이페이지
 */
 .main-panel .content-header {
@@ -16430,7 +16430,7 @@ body.ui-btn-fix .btn-fix .btn-area {
 }
 
 /**
-* Module.Datepicker 
+* Module.Datepicker
 * ------------------
 */
 .bootstrap-datetimepicker-widget.dropdown-menu {
@@ -20351,7 +20351,7 @@ ul.table-sub-list li button.ico-list-drop2 .hidden {
 		padding: 10px 70px;
 		line-height: 1.7;
 		border: 1px solid #e4e4e4;
-		/*.tbl-info {width: 100%; 
+		/*.tbl-info {width: 100%;
 		th {width: 20%; vertical-align: top; font-weight: 700; padding: 25px 0 25px 25px;}
 		td {width: 80%; color: #333; padding: 15px 25px 25px 25px;}
 		span.color-b {color: #117ada;}
@@ -28685,7 +28685,7 @@ h3.ex + .dbs_q_box {
 
 
 
-
+/* ================================== NEW career ================================== */
 
 
 
@@ -28714,7 +28714,7 @@ h3.ex + .dbs_q_box {
 	width: calc(50% - 28px);
 	margin-bottom: 80px;
 }
-.grid_type_2 ul>li:last-child,#CSR_SOCIAL_RESPONSIBILITY .grid_type_2 ul>li:nth-last-child(2){margin-bottom:0;}
+.grid_type_2 ul>li:last-child,.grid_type_2 ul>li:nth-last-child(2){margin-bottom:0;}
 .grid_type_2 ul>li:nth-child(2n){margin-right:0;}
 .grid_type_2 ul>li img{width:100%;}
 .grid_type_2 ul>li .title{font-size:24px; line-height:36px; margin:28px 0 10px;}
