@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+/**
+* layout
+* ------------------
+*/
+
+//variables
+$page-margin : 40px;
+$page-margin-mo : 15px;
+
+$section-margin : 40px;
+$section-margin-mo : 15px;
+
+$layout-max-width : $breakpoint-pc-upper-max; //1920
+$layout-content-width : $breakpoint-pc-max; //1200
+
+$layout-content-outter-width : calc(#{$layout-content-width} + (#{$page-margin} *2)); //1280
+$layout-content-section-width : calc(#{$layout-content-width} + (#{$section-margin} *2)); //1280
+
+
+//Set Visual Height
+@mixin contentVisualH($_pc, $_tablet, $_phone){
+  height:$_pc ;
+  .title-wrap {height: $_pc;}
+  @include mediaQuery(tablet){
+    height:$_tablet ;
+    .title-wrap {height: $_tablet;}
+  }
+  @include mediaQuery(phone){
+    height:$_phone ;
+    .title-wrap {height: $_phone;}
+  }
+}
+
+
+/**
+* Layout
+* ------------------
+*/
+
+body{background-color:#fff;}
+.lock,.lock body{height:100%;overflow:hidden;-webkit-overflow-scrolling:none}
+.lock #wrapper{position:fixed;left:0;bottom:0;width:100%;-webkit-overflow-scrolling:none}
+@include mediaQuery(phone){
+  body {position: relative; overflow-x: hidden;}
+}
+
+
+
+//Onlypc 踰꾩쟾
+
+/**
+* PC-ONLY
+* ------------------
+*/
+
+html.pc-only{
+  body{overflow-x: auto;}
+  .navbar .container-fluid{width:100%;}
+  .content .section{width: $layout-content-section-width;}
+  // .table-area{width: $breakpoint-pc-max;}
+}
+
+
+/**
+* Responsive
+* ------------------
+*/
+.container{@include clearfix();max-width:$layout-max-width; padding-left: 0; padding-right: 0;}
+.content{position:relative; margin:0;min-height:300px;padding-bottom: 100px;}
+
+// container-fluid
+.container-fluid{max-width: $layout-max-width; margin:0 auto;padding-left: 0;padding-right: 0;
+  .navbar &,
+  .footer &{max-width:1680px;padding-left:$page-margin;padding-right:$page-margin;
+    @include mediaQuery(phone){padding-left:$page-margin-mo;padding-right:$page-margin-mo;}
+  }
+}
+
+//section
+.section{position:relative;margin: 0 auto;
+  max-width:$layout-content-section-width; padding-left:$section-margin;padding-right:$section-margin;
+  > .section-wrap{position: relative;padding-left:$section-margin;padding-right:$section-margin;
+    &.no-pad{padding-left: 0;padding-right: 0;}
+  }
+  .section{max-width:$layout-content-width;padding-left: 0; padding-right: 0;}
+
+  // .section + .section{margin-top: 80px;}
+}
+
+.section.bd-line{border-bottom:5px solid #f5f5f5;}
+
+@mixin sectionFull(){
+  max-width:$layout-max-width; //padding-left:$page-margin;padding-right:$page-margin;
+  > .section-wrap{max-width: $layout-content-width; margin:0 auto; }
+  &.bg-gray{background: #ddd;}
+  &.no-pad{padding-left: 0;padding-right: 0;}
+}
+.section.full{
+  @include sectionFull();
+}
+
+@include mediaQuery(phone){
+  .section{padding-left:$page-margin-mo;padding-right:$page-margin-mo;
+    &.no-pad{padding-left: 0;padding-right: 0;}
+    .section-wrap{padding-left:$section-margin-mo;padding-right:$section-margin-mo;}
+  }
+}
+
+
+/**
+* Footer 100% 怨좎젙
+* ------------------
+* 1. html,body{ height:100%;}
+* 2. footer 媛먯떥怨��덈뒗 遺�え : position:relative; min-height:100%
+* 3. footer 諛붾줈���뺤젣 �몃뱶 : min-height:理쒖냼 �믪씠; padding-bottom:�뗮꽣 �믪씠
+* 4. footer  : position:absolute; bottom:0; height:�뗮꽣 �믪씠
+*/
+
+$footer-height: 120px;
+$footer-height-mo: 100px;
+html,body{ height:100%;}
+.wrapper{position: relative;min-height: 100%;
+  .main-panel{min-height : 300px; padding-bottom: $footer-height; }
+  .footer{position: absolute;bottom: 0;left: 0;right: 0;height: $footer-height;overflow: hidden;
+    .footer-wrap{height: $footer-height;}
+  }
+
+  @include mediaQuery(phone){
+    .main-panel{padding-bottom: $footer-height-mo; }
+    .footer{height: $footer-height-mo;
+      .footer-wrap{height: $footer-height-mo;}
+    }
+  }
+}
+
+
+/**
+* visual
+* ------------------
+* login : 濡쒓렇��
+* member : �뚯썝媛�엯
+* good : �쇳븯湲�醫뗭�
+* about : �먯궛����븯��
+* job : 吏곷Т �뚯븘蹂닿퀬
+* apply : �낆궗吏�썝�섍린
+* my : 留덉씠�섏씠吏�r
+*/
+
+$visaul-font-pc : 48px;
+$visaul-font-tablet : 32px;
+$visaul-font-mobile : 28px;
+
+$visual-height-pc : 320px;
+$visual-height-tablet : 280px;
+$visual-height-mobile : 160px;
+
+.main-panel{
+  //default
+  .content-header{position: relative; background-color: #fff; margin-bottom: 100px;
+    .title-wrap{position: relative; max-width:$layout-content-width; margin: 0 auto;
+      .h1-title{position: relative; left:0; top: 20px; color: #000; line-height:1;font-size:$visaul-font-pc ;
+        @include mediaQuery(pc_gutter){
+          left:40px;
+        }
+        @include mediaQuery(pc_under){
+          font-weight: $fw-m;font-size:$visaul-font-tablet;
+        }
+        @include mediaQuery(phone){
+          font-size: $visaul-font-mobile;
+        }
+        span{display:block;}
+      }
+      .breadscrumb{position:absolute;right: 30px;bottom: 30px;font-size: 0;
+        li{position:relative;display:inline-block; padding-left:13px; font-size:16px; color:#fff;
+          &:before{position:absolute;content:'/'; left:4px; top:0;}
+          &:first-child{padding-left:0;}
+          &:first-child:before{content:'';}
+        }
+        @include mediaQuery(pc_under){
+          display: none;
+        }
+      }
+    }
+  }
+
+  //Top Button
+  .mtop_btn{position:fixed; right:40px; bottom:140px; display:inline-block; width:24px; height:28px; opacity:0; transition:all .5s; background:url($svg_scroll_btn) 0 0 no-repeat; background-size:24px 28px; border-radius:50%;
+    &.animated{opacity:1; transition:all .5s;}
+  }
+
+  //visual Default
+  & .content-visual{@include contentVisualH($visual-height-pc, $visual-height-tablet, $visual-height-mobile);
+    background-size:cover; background-position:top center; margin-bottom:0; //margin-bottom:60px;
+    .title-wrap .h1-title{position: absolute; top: 50%;transform:translateY(-50%);color: #fff;}
+
+    @include mediaQuery(pc_under){
+      .title-wrap .h1-title{left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center; }
+    }
+  }
+
+  //Login : 媛쒕퀎 left 諛��믪씠 議곗젅
+  &[data-ui-category ="login"] .content-header{height: 0;
+    .title-wrap {
+      .h1-title{@include sr-only;}
+      .breadscrumb{display: none;}
+    }
+    @include mediaQuery(phone){
+      margin-bottom:40px;
+    }
+  }
+
+  //�쇳븯湲�醫뗭�
+  &[data-ui-category ="good"] .content-visual{background: url('../img/visual/good2.jpg') 0 0 no-repeat; background-size:cover; background-position:top center;}
+
+  //�먯궛�먮��섏뿬
+  &[data-ui-category ="about"] .content-visual{background: url('../img/visual/about.jpg') 0 0 no-repeat; background-size:cover; background-position:top center;}
+
+  //吏곷Т �뚯븘蹂닿퀬
+  &[data-ui-category ="job"] .content-visual{background: url('../img/visual/job2.jpg') 0 0 no-repeat; background-size:cover; background-position:top center;}
+
+  //�낆궗吏�썝�섍린
+  &[data-ui-category ="apply"] .content-visual{background: url('../img/visual/apply.jpg') 0 0 no-repeat; background-size:cover; background-position:top center;}
+
+  //MY : 媛쒕퀎 left 諛��믪씠 議곗젅
+  &[data-ui-category ="my"] .content-visual,
+  &[data-ui-category ="member"] .content-visual{background: url('../img/visual/my.jpg') 0 0 no-repeat; background-size:cover; background-position:top center;}
+
+
+
+  //guide
+  &[data-ui-category ="guide"] .content-header{background-color: #eee;margin-bottom: 100px;
+    .breadscrumb{display:none;}
+    .content-header{ margin-bottom: 30px;}
+    .section + .section{margin-top: 30px;}
+    .section > .title-area{margin-top: 20px;}
+    .title-area{padding: 5px 0;
+      .h4-title{font-size: 16px;
+        small{margin-left: 10px;font-size: 14px;}
+      }
+    }
+  }
+}
+
+
+/**
+* Plugin
+* ------------------
+*/
+
+.sidebar,
+  // .main-panel,
+.sidebar-wrap{
+  -webkit-transition-property: top,bottom,width;
+  transition-property: top,bottom, width;
+  -webkit-transition-duration: .2s,.2s, .35s;
+  transition-duration: .2s,.2s, .35s;
+  -webkit-transition-timing-function: linear,linear,ease;
+  transition-timing-function: linear,linear,ease;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+

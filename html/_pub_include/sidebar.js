@@ -1,0 +1,96 @@
+/**
+* SideBar include
+* ------------------
+*/
+
+(function(){
+	var str='';
+	str+='	<!-- ====================================== -->';
+	str+='	<!-- Start of sidebar -->';
+	str+='	<!-- <script type="text/javascript" src="../_pub_include/sidebar.js"></script> -->';
+	str+='	<!-- ====================================== -->';
+	str+='	<div id="sidebar" class="sidebar">';
+	str+='		<button type="button" aria-label="sidebar Close" class="btn-sidebar-close"></button>';
+	str+='		<!-- sidevar-header -->';
+	str+='		<div class="sidebar-header">';
+	str+='			<div class="info-wrap">';
+	str+='				<strong class="name">김두산님</strong>';
+	str+='				<p class="slogan">커리어두산과 함께 <br>내일을 만들어가세요.</p>';
+	str+='			</div>';
+	str+='			<div class="btn-wrap">';
+	// str+='				<button type="button" class="btn"><span>로그인</span></button>';
+	str+='				<button type="button" class="btn"><span>로그아웃</span></button>';
+	str+='			</div>';
+	str+='		</div>';
+	str+='		<!-- //sidevar-header -->';
+	str+='		<!-- sidebar-body -->';
+	str+='		<div class="sidebar-body">';
+	str+='			<ul class="nav">';
+	str+='				<li>';
+	str+='					<a href="javascript:void(0);" role="button"><span>내일을 준비하는</span></a>';
+	str+='					<div class="collapse show "> <!-- show -->';
+	str+='						<ul class="nav">';
+	str+='							<li class="outlink"><a href="javascript:void(0);"><span>두산의 인재, 두산인</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>두산인의 하루</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>생생 두산 입사기</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>두산인의 혜택</span></a></li>';
+	str+='						</ul>';
+	str+='					</div>';
+	str+='				</li>';
+	str+='				<li class="">';
+	str+='					<a href="javascript:void(0);" role="button"><span>두산에 대하여</span></a>';
+	str+='					<div class="collapse">';
+	str+='						<ul class="nav">';
+	str+='							<li class="outlink"><a href="javascript:void(0);"><span>두산스토리</span></a></li>';
+	str+='							<li class="outlink"><a href="javascript:void(0);"><span>두산의 활약상</span></a></li>';
+	str+='							<li class="outlink"><a href="javascript:void(0);"><span>목표와 핵심가치</span></a></li>';
+	str+='							<li class="outlink"><a href="javascript:void(0);"><span>경영전략</span></a></li>';
+	str+='							<li class="outlink"><a href="javascript:void(0);"><span>두산뉴스룸</span></a></li>';
+	str+='						</ul>';
+	str+='					</div>';
+	str+='				</li>';
+	str+='				<li>';
+	str+='					<a href="javascript:void(0);" role="button"><span>직무 알아보고</span></a>';
+	str+='					<div class="collapse">';
+	str+='						<ul class="nav">';
+	str+='							<li><a href="javascript:void(0);"><span>계열사로 보기</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>직무순으로 보기</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>직무 온라인상담</span></a></li>';
+	str+='						</ul>';
+	str+='					</div>';
+	str+='				</li>';
+	str+='				<li>';
+	str+='					<a href="javascript:void(0);" role="button"><span>입사지원하기</span></a>';
+	str+='					<div class="collapse">';
+	str+='						<ul class="nav">';
+	str+='							<li><a href="javascript:void(0);"><span>채용절차</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>채용공고</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>인재DB</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>FAQ</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>공지사항</span></a></li>';
+	str+='						</ul>';
+	str+='					</div>';
+	str+='				</li>';
+	str+='				<li>';
+	str+='					<a href="javascript:void(0);" role="button"><span>마이페이지</span></a>';
+	str+='					<div class="collapse">';
+	str+='						<ul class="nav">';
+	str+='							<li><a href="javascript:void(0);"><span>입사지원 수정</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>전형결과 확인</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>나의 관심직무</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>개인정보 수정</span></a></li>';
+	str+='							<li><a href="javascript:void(0);"><span>서류반환 청구</span></a></li>';
+	str+='						</ul>';
+	str+='					</div>';
+	str+='				</li>';
+	str+='			</ul>';
+	str+='		</div>';
+	str+='		<!-- //sidebar-body -->';
+	str+='	</div>';
+	str+='	<!-- ====================================== -->';
+	str+='	<!-- //End of sidebar -->';
+	str+='	<!-- ====================================== -->';
+
+	document.write(str);
+})();
+
