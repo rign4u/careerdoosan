@@ -28693,33 +28693,33 @@ h3.ex + .dbs_q_box {
 .gu_grid:after{display:block;content:"";clear:both;}
 .gu_grid .gu_title{font-size:40px; font-weight:700; line-height:56px;word-break:break-word;-ms-word-break:break-all}
 .gu_grid>div{display:inline-block; vertical-align:top;}
-.gu_grid .gu_right_grid{width:calc(100% - 456px); float:right;}
 
-/* Type B - ìž‘ì€ ê·¸ë¦¬ë“œ */
+/*
+!* Type B - ìž‘ì€ ê·¸ë¦¬ë“œ *!
 .gu_grid_sm{max-width:1116px; padding:0;}
 .gu_grid_sm .gu_title{font-size:32px; font-weight:700; line-height:48px;word-break:break-word;-ms-word-break:break-all}
-.gu_grid_sm .gu_left_grid{width:228px; margin-right:48px;}
-.gu_grid_sm .gu_right_grid{width:840px;}
+*/
 
 
 
 
-.grid_type_2{position:relative;}
-.grid_type_2 ul{font-size:0;}
 
-.grid_type_2 ul > li {
+.career_m_box1{position:relative;}
+.career_m_box1 ul{font-size:0;}
+
+.career_m_box1 ul > li {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 56px;
 	width: calc(50% - 28px);
 	margin-bottom: 80px;
 }
-.grid_type_2 ul>li:last-child,.grid_type_2 ul>li:nth-last-child(2){margin-bottom:0;}
-.grid_type_2 ul>li:nth-child(2n){margin-right:0;}
-.grid_type_2 ul>li img{width:100%;}
-.grid_type_2 ul>li .title{font-size:24px; line-height:36px; margin:28px 0 10px;}
-.grid_type_2 ul>li .desc{font-size:18px; line-height:32px; color:#444;}
-.grid_type_2 ul>li .gu_btn_sm_box{text-align:left; margin-top:32px;}
+.career_m_box1 ul>li:last-child,.career_m_box1 ul>li:nth-last-child(2){margin-bottom:0;}
+.career_m_box1 ul>li:nth-child(2n){margin-right:0;}
+.career_m_box1 ul>li img{width:100%;}
+.career_m_box1 ul>li .title{font-size:24px; line-height:36px; margin:28px 0 10px;}
+.career_m_box1 ul>li .desc{font-size:18px; line-height:32px; color:#444;}
+.career_m_box1 ul>li .gu_btn_sm_box{text-align:left; margin-top:32px;}
 
 
 
@@ -28754,22 +28754,21 @@ h3.ex + .dbs_q_box {
 /* ================================== Tablet css ================================== */
 @media all and (max-width: 1080px){
 	#CSR_SOCIAL_RESPONSIBILITY{padding-bottom:90px;}
-	.grid_type_2 ul>li{margin-bottom:51px; margin-right:33px;width:calc(50% - 33px);}
-	.grid_type_2 ul>li .title{font-size: 18px;line-height: 28px; margin: 22px 0 10px;}
-	.grid_type_2 ul>li .desc{font-size: 14px;line-height: 24px;}
-	.grid_type_1 ul>li .desc{font-size:14px; line-height:24px; margin-top:32px;}
+	.career_m_box1 ul>li{margin-bottom:51px; margin-right:33px;width:calc(50% - 33px);}
+	.career_m_box1 ul>li .title{font-size: 18px;line-height: 28px; margin: 22px 0 10px;}
+	.career_m_box1 ul>li .desc{font-size: 14px;line-height: 24px;}
 }
 
 /* ================================== Mobile css ================================== */
 @media all and (max-width: 766px){
 	.gu_grid .gu_left_grid{margin-bottom:50px;}
-	.grid_type_2 ul>li{margin-bottom:60px;width:100%; margin-right:0;}
-	.grid_type_2 ul>li:nth-last-child(2){margin-bottom:60px;}
-	.grid_type_2 ul>li .title{font-size:18px; line-height:26px;}
-	.grid_type_2 ul>li .gu_btn_sm_box{margin-top:35px;}
+	.career_m_box1 ul>li{margin-bottom:60px;width:100%; margin-right:0;}
+	.career_m_box1 ul>li:nth-last-child(2){margin-bottom:60px;}
+	.career_m_box1 ul>li .title{font-size:18px; line-height:26px;}
+	.career_m_box1 ul>li .gu_btn_sm_box{margin-top:35px;}
 	.gu_swiper{margin-top:60px;}
 }
 
 @media all and (max-width: 323px){
-	.grid_type_2 ul>li .gu_btn_sm_box a > span{letter-spacing:-0.1px;}
+	.career_m_box1 ul>li .gu_btn_sm_box a > span{letter-spacing:-0.1px;}
 }
