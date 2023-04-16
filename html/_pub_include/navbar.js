@@ -31,6 +31,7 @@
 	str+='										<a href="javascript:void(0);"><span>	두산인의 하루</span></a>';
 	str+='									</li>';
 	str+='									<li><a href="javascript:void(0);"><span>생생 두산 입사기</span></a></li>';
+	str+='									<li><a href="javascript:void(0);"><span>두산인의 성장</span></a></li>';
 	str+='									<li><a href="javascript:void(0);"><span>두산인의 혜택</span></a></li>';
 	str+='								</ul>';
 	str+='							</div>';
@@ -114,6 +115,7 @@
 	str+='									<a href="javascript:void(0);"><span>	두산인의 하루</span></a>';
 	str+='								</li>';
 	str+='								<li><a href="javascript:void(0);"><span>생생 두산 입사기</span></a></li>';
+	str+='								<li><a href="javascript:void(0);"><span>두산인의 성장</span></a></li>';
 	str+='								<li><a href="javascript:void(0);"><span>두산인의 혜택</span></a></li>';
 	str+='							</ul>';
 	str+='						</div>';
