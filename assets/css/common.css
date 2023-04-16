@@ -28725,6 +28725,42 @@ h3.ex + .dbs_q_box {
 
 
 
+
+
+.grow_cont2{position:relative;}
+.grow_cont2 ul{font-size:0;}
+
+.grow_cont2 ul > li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 50px;
+	width: calc(33% - 33px);
+	margin-bottom: 80px;
+}
+.grow_cont2 ul>li:last-child,.grow_cont2 ul>li:nth-last-child(3){margin-bottom:0;}
+.grow_cont2 ul>li:nth-child(3n){margin-right:0;}
+.grow_cont2 ul>li img{width:100%;}
+.grow_cont2 ul>li .title{font-size:24px; line-height:36px; margin:0px 0 10px;font-weight: 800;}
+.grow_cont2 ul>li .desc{font-size:17px; line-height:32px; color:#444;padding-right: 15px}
+.grow_cont2 ul>li .gu_btn_sm_box{text-align:left; margin-top:32px;}
+
+.grow_cont2 .top_title h1 {font-size:35px; font-weight: 800; margin-bottom: 35px;}
+.grow_cont2 .top_title h2 {font-size:20px; line-height: 36px; margin-bottom: 90px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*공통버튼*/
 
 .gu_btn_big_box {
@@ -28885,6 +28921,11 @@ h3.ex + .dbs_q_box {
 	.grow_cont1 ul>li{margin-bottom:51px; margin-right:33px;width:calc(50% - 33px);}
 	.grow_cont1 ul>li .title{font-size: 18px;line-height: 28px; margin: 22px 0 10px;}
 	.grow_cont1 ul>li .desc{font-size: 14px;line-height: 24px;}
+
+	.grow_cont2 ul>li{margin-bottom:51px; margin-right:33px;width:calc(34% - 33px);}
+	.grow_cont2 ul>li:last-child{margin-right:0px;}
+	.grow_cont2 ul>li .title{font-size: 18px;line-height: 28px; margin: 0px 0 10px;}
+	.grow_cont2 ul>li .desc{font-size: 14px;line-height: 24px;}
 }
 
 /* ================================== Mobile css ================================== */
@@ -28893,6 +28934,11 @@ h3.ex + .dbs_q_box {
 	.grow_cont1 ul>li:nth-last-child(2){margin-bottom:60px;}
 	.grow_cont1 ul>li .title{font-size:18px; line-height:26px;}
 	.grow_cont1 ul>li .gu_btn_sm_box{margin-top:35px;}
+
+	.grow_cont2 ul>li{margin-bottom:60px;width:100%; margin-right:0;}
+	.grow_cont2 ul>li:nth-last-child(2){margin-bottom:60px;}
+	.grow_cont2 ul>li .title{font-size:18px; line-height:26px;}
+	.grow_cont2 ul>li .gu_btn_sm_box{margin-top:35px;}
 }
 
 @media all and (max-width: 323px){

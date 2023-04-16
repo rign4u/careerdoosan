@@ -37,6 +37,33 @@ $(document).ready(function() {
 	var growTween3 = new TimelineMax({delay:0})
 			.staggerFromTo(".grow-box .grow_cont1 ul li", 0.8, {opacity: 0, y: -30, ease: Power0.easeNone}, {opacity: 1, y: 0, delay:0}, 0.4);
 	var growScene3 = new ScrollMagic.Scene({triggerElement: '.grow-group01',triggerHook: 0.8}).setTween(growTween3).reverse(false).addTo(controller);
+
+
+
+
+
+	var growTween4 = new TimelineMax({delay:0})
+			.fromTo(".grow-box1 .grow_cont2 .top_title", .8, {opacity: 0, y:30, ease: Power0.easeNone}, {opacity: 1, y:0, delay:0});
+	var growScene4 = new ScrollMagic.Scene({triggerElement: '.grow-box1',triggerHook: 0.8}).setTween(growTween4).reverse(false).addTo(controller);
+
+	var growTween5 = new TimelineMax({delay:0})
+			.staggerFromTo(".grow-box1 .grow_cont2 ul.grow-group02 li", 0.8, {opacity: 0, y: -30, ease: Power0.easeNone}, {opacity: 1, y: 0, delay:0}, 0.4);
+	var growScene5 = new ScrollMagic.Scene({triggerElement: '.grow-group02',triggerHook: 0.8}).setTween(growTween5).reverse(false).addTo(controller);
+
+
+	var growTween6 = new TimelineMax({delay:0})
+			.staggerFromTo(".grow-box1 .grow_cont2 ul.grow-group03 li", 0.8, {opacity: 0, y: -30, ease: Power0.easeNone}, {opacity: 1, y: 0, delay:0}, 0.4)
+			.staggerFromTo(".grow-box1 .grow_cont2 ul.grow-group04 li", 0.8, {opacity: 0, y: -30, ease: Power0.easeNone}, {opacity: 1, y: 0, delay:0}, 0.4);
+	var growScene6 = new ScrollMagic.Scene({triggerElement: '.grow-group03',triggerHook: 0.8}).setTween(growTween6).reverse(false).addTo(controller);
+
+
+	/*var growTween7 = new TimelineMax({delay:0})
+			.staggerFromTo(".grow-box1 .grow_cont2 ul.grow-group04 li", 0.8, {opacity: 0, y: -30, ease: Power0.easeNone}, {opacity: 1, y: 0, delay:0}, 0.4);
+	var growScene7 = new ScrollMagic.Scene({triggerElement: '.grow-group04',triggerHook: 0.8}).setTween(growTween7).reverse(false).addTo(controller);*/
+
+
+
+
 	/** ================================= **/
 	/** E 20230414 두산의 성장 - 전용 JS 정의 **/
 	/** ================================= **/
@@ -134,27 +161,71 @@ $(document).ready(function() {
 
 
 
-					<div class="section grow-box">
-						<div class="grow_cont1">
+					<div class="section grow-box1">
+						<div class="grow_cont2">
 							<div class="top_title">
 								<h1>성장을 위한 지원</h1>
 								<h2>탁월함을 향한 개인의 노력에 든든한 조력자가 될 수 있도록 전문화된 교육 프로그램과 성장의 기회를 제공합니다.</h2>
 							</div>
-							<ul class="grow-group01">
+							<ul class="grow-group02">
 								<li>
 									<div class="img_box"><img src="../../assets/img/grow/main_img5.png"></div>
-									<div class="title">두산 연강원/DLI (Doosan Leadership Institute)</div>
-									<div class="desc">서울에 위치한 그룹 연수원으로 그룹의 리더십 양성 기능을 담당. 두산의 구성원들이 교육을 통해 지식과 마음을 재충전할 수 있도록 최적의 교육 시설과 아름다운 정원 휴식 공간 제공</div>
 								</li>
 								<li>
-									<div class="img_box"><img src="../../assets/img/grow/main_img6.png"></div>
-									<div class="title">분당두산타워 공용공간 Open Innovation Center</div>
-									<div class="desc">미래를 만드는 두산 그룹의 창의 혁신 센터. 자유로운 소통과 만남, 아이디어의 발굴과 구체화가 가능한 창의적 분위기의 공간으로 구성원들의 학습과 창의적 컨텐츠 생산을 지원</div>
+									<div class="title">온보딩 프로그램</div>
+									<div class="desc">새로운 환경에서도 개인이 잠재력을 잘 발휘할 수 있도록 두산의 문화와 일하는 방식을 이해할 수 있는 그룹 차원의 두산 입문 교육, 선배의 멘토링 등을 입사 초기에 집중 지원</div>
 									<div class="gu_btn_big_box gu_btn_arrow ">
-										<a href="#none" target="_blank" class="kr_sd_500" title="새창으로 열림">
-											<span>더보기</span>
+										<a href="javascript:void(0);" target="_blank" class="kr_sd_500" title="새창으로 열림"  data-toggle="modal" data-target="#OnBoardingPop">
+											<span>자세히 보기</span>
 										</a>
 									</div>
+								</li>
+								<li>
+									<div class="title">사내 리더십 교육</div>
+									<div class="desc">준비된 리더로 성장할 수 있도록 두산인으로서 갖추어야 할 공통 역량과 리더십 역량을 강화하기 위한 다양한 교육 프로그램 제공 </div>
+									<div class="gu_btn_big_box gu_btn_arrow ">
+										<a href="#none" target="_blank" class="kr_sd_500" title="새창으로 열림">
+											<span>자세히 보기</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+
+							<ul class="grow-group03">
+								<li>
+									<div class="img_box"><img src="../../assets/img/grow/main_img6.png"></div>
+								</li>
+								<li>
+									<div class="title">사내 공통 역량 교육</div>
+									<div class="desc">기업 운영과 여러 부서 간의 공동 작업을 이해하고, 협업을 이끄는 전문가로 성장 할 수 있도록 전략적 업무 추진, Reporting 노하우 등 공통 역량을 향상하는 교육 프로그램 제공</div>
+									<div class="gu_btn_big_box gu_btn_arrow ">
+										<a href="#none" target="_blank" class="kr_sd_500" title="새창으로 열림">
+											<span>자세히 보기</span>
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="title">사내 직무 교육</div>
+									<div class="desc">각 사의 산업과 직무 영역에 따라 다양한 사내 직무 역량 심화 교육 프로그램과 외부 교육 참여의 기회 제공</div>
+									<div class="gu_btn_big_box gu_btn_arrow ">
+										<a href="#none" target="_blank" class="kr_sd_500" title="새창으로 열림">
+											<span>자세히 보기</span>
+										</a>
+									</div>
+								</li>
+							</ul>
+
+							<ul class="grow-group04">
+								<li>
+									<div class="img_box"></div>
+								</li>
+								<li>
+									<div class="title">주재원 제도 </div>
+									<div class="desc">두산 해외 지점/자회사에서 주재원으로 근무하여 글로벌 인재로 성장할 수 있는 기회 제공</div>
+								</li>
+								<li>
+									<div class="title">사내 공모 제도 (Internal Job Posting)</div>
+									<div class="desc">그룹 내에서 직무 전환이 가능하도록 사내 공모 제도로 두 번째 커리어 기회 제공</div>
 								</li>
 							</ul>
 						</div>
