@@ -28689,16 +28689,6 @@ h3.ex + .dbs_q_box {
 
 
 
-.gu_grid{position:relative;max-width:1432px; width:100%; margin:0 auto;padding:0 44px;*zoom:1; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;}
-.gu_grid:after{display:block;content:"";clear:both;}
-.gu_grid .gu_title{font-size:40px; font-weight:700; line-height:56px;word-break:break-word;-ms-word-break:break-all}
-.gu_grid>div{display:inline-block; vertical-align:top;}
-
-/*
-!* Type B - ìž‘ì€ ê·¸ë¦¬ë“œ *!
-.gu_grid_sm{max-width:1116px; padding:0;}
-.gu_grid_sm .gu_title{font-size:32px; font-weight:700; line-height:48px;word-break:break-word;-ms-word-break:break-all}
-*/
 
 
 
@@ -28726,24 +28716,6 @@ h3.ex + .dbs_q_box {
 
 
 
-@media all and (max-width: 1280px){
-	.gu_grid{max-width:1104px; padding:0 56px;}
-	.gu_grid>div{display:inline-block; vertical-align:top;}
-	.gu_grid .gu_left_grid{width:234px; margin-right:48px;}
-	.gu_grid .gu_right_grid{width:calc(100% - 282px);}
-}
-
-@media all and (max-width: 1080px){
-	.gu_grid{max-width:1104px; padding:0 34px;}
-	.gu_grid>div{display:inline-block; vertical-align:top;}
-	.gu_grid .gu_left_grid{width:147px; margin-right:24px;}
-	.gu_grid .gu_right_grid{width:calc(100% - 171px);}
-}
-@media all and (max-width: 766px){
-	.gu_grid{padding:0 4px;}
-	.gu_grid .gu_left_grid{float:none; width:100%;display:block;margin-right:0;}
-	.gu_grid .gu_right_grid{float:none;width:100%; display:block;}
-}
 
 
 /* ================================== Laptop css ================================== */
@@ -28753,7 +28725,6 @@ h3.ex + .dbs_q_box {
 
 /* ================================== Tablet css ================================== */
 @media all and (max-width: 1080px){
-	#CSR_SOCIAL_RESPONSIBILITY{padding-bottom:90px;}
 	.career_m_box1 ul>li{margin-bottom:51px; margin-right:33px;width:calc(50% - 33px);}
 	.career_m_box1 ul>li .title{font-size: 18px;line-height: 28px; margin: 22px 0 10px;}
 	.career_m_box1 ul>li .desc{font-size: 14px;line-height: 24px;}
@@ -28761,12 +28732,10 @@ h3.ex + .dbs_q_box {
 
 /* ================================== Mobile css ================================== */
 @media all and (max-width: 766px){
-	.gu_grid .gu_left_grid{margin-bottom:50px;}
 	.career_m_box1 ul>li{margin-bottom:60px;width:100%; margin-right:0;}
 	.career_m_box1 ul>li:nth-last-child(2){margin-bottom:60px;}
 	.career_m_box1 ul>li .title{font-size:18px; line-height:26px;}
 	.career_m_box1 ul>li .gu_btn_sm_box{margin-top:35px;}
-	.gu_swiper{margin-top:60px;}
 }
 
 @media all and (max-width: 323px){
