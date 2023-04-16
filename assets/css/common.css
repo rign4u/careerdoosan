@@ -28759,7 +28759,12 @@ h3.ex + .dbs_q_box {
 
 
 
-
+.pop_line .modal-header {
+	padding: 25px 30px 15px!important;
+	border-bottom-color: #ddd!important;
+	border-radius: 0;
+	background-color: #fff;
+	/*border-bottom: 1px solid #ddd;*/}
 .growpop_section {
 	padding: 20px 10px 10px 10px;
 }
@@ -28767,7 +28772,7 @@ h3.ex + .dbs_q_box {
 
 .growpop_content ul li {padding: 15px 0;}
 
-.growpop_content .cont-tit {font-size:19px; font-weight: 700;padding: 5px 0;}
+.growpop_content .cont-tit {font-size:20px; font-weight: 700;padding: 5px 0;}
 .growpop_content .cont-txt {font-size:18px; line-height:19px; padding: 6px 0;}
 
 .cont-box .table_cont {
@@ -28791,6 +28796,12 @@ h3.ex + .dbs_q_box {
 	text-align: left;
 	padding-left: 30px;
 	line-height: 26px;
+}
+
+.growpop_content .cont-memo {
+	border: 1px solid #e4e4e4;
+	background: #fafafa;
+	padding: 30px;
 }
 
 
