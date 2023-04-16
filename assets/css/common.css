@@ -28808,12 +28808,13 @@ h3.ex + .dbs_q_box {
 	padding: 5px;
 	line-height: 20px;
 	position: relative;
+	display: flex;
 }
 .growpop_content .cont-memo ul li span {
-	padding: 5px;
+	padding: 0 5px;
+	padding-left: 15px;
 	line-height: 20px;
 	position: relative;
-	float: left;
 }
 
 .blue-jum {
@@ -28824,7 +28825,6 @@ h3.ex + .dbs_q_box {
 	height: 5px;
 	border-radius: 50%;
 	background: #1478d8;
-	float: left;
 }
 
 
