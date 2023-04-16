@@ -28772,7 +28772,7 @@ h3.ex + .dbs_q_box {
 
 .growpop_content ul li {padding: 15px 0 35px 0;}
 
-.growpop_content .cont-tit {font-size:20px; font-weight: 700;padding: 5px 0 15px 0;}
+.growpop_content .cont-tit {font-size:20px; font-weight: 800;padding: 5px 0 10px 0;}
 .growpop_content .cont-txt {font-size:18px; line-height:32px;}
 
 .cont-box .table_cont {
@@ -28781,6 +28781,7 @@ h3.ex + .dbs_q_box {
 	border-top: 2px solid #1478d8;
 	border-bottom: 1px solid #e6e6e6;
 	text-align: center;
+	margin-top: 8px;
 }
 .cont-box .table_cont th {
 	border-bottom: 1px solid #e6e6e6;
@@ -28813,8 +28814,10 @@ h3.ex + .dbs_q_box {
 .growpop_content .cont-memo ul li span {
 	padding: 0 5px;
 	padding-left: 15px;
-	line-height: 20px;
+	line-height: 24px;
 	position: relative;
+	font-size:18px;
+	color: #666666;
 }
 
 .blue-jum {
