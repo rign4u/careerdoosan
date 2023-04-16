@@ -27,14 +27,16 @@ $(document).ready(function() {
 
 	/*section1*/
 	var growTween1 = new TimelineMax({delay:0})
-			.fromTo(".grow-box .career_top_box", 1.8, {opacity: 0, y:30, ease: Power0.easeNone}, {opacity: 1, y:0, delay:0});
-	var growScene1 = new ScrollMagic.Scene({
-		triggerElement: '.grow-box',
-		triggerHook: 1
-	})
-			.setTween(growTween1)
-			.reverse(false)
-			.addTo(controller);
+			.fromTo(".grow-box .career_top_box", .8, {opacity: 0, y:30, ease: Power0.easeNone}, {opacity: 1, y:0, delay:0});
+	var growScene1 = new ScrollMagic.Scene({triggerElement: '.grow-box',triggerHook: 1}).setTween(growTween1).reverse(false).addTo(controller);
+
+	var growTween2 = new TimelineMax({delay:0})
+			.fromTo(".grow-box .career_cont1 .top_title", .8, {opacity: 0, y:30, ease: Power0.easeNone}, {opacity: 1, y:0, delay:0});
+	var growScene2 = new ScrollMagic.Scene({triggerElement: '.grow-box',triggerHook: 1}).setTween(growTween2).reverse(false).addTo(controller);
+
+	var growTween3 = new TimelineMax({delay:0})
+			.staggerFromTo(".grow-box .career_cont1 ul li", 0.8, {opacity: 0, y: -30, ease: Power0.easeNone}, {opacity: 1, y: 0, delay:0}, 0.4);
+	var growScene3 = new ScrollMagic.Scene({triggerElement: '.grow-group01',triggerHook: 0.8}).setTween(growTween3).reverse(false).addTo(controller);
 	/** ================================= **/
 	/** E 20230414 두산의 성장 - 전용 JS 정의 **/
 	/** ================================= **/
@@ -100,7 +102,7 @@ $(document).ready(function() {
 								<h1>성장을 위한 공간</h1>
 								<h2>성장을 향한 개인의 노력을 지원하기 위해 접근성이 높은 곳에 별도의 공간을 마련하였습니다.<br/> 집합 교육과 온라인 교육 참여, 팀 워크샵, 크고 작은 회의를 위해 자유롭게 사용됩니다.</h2>
 							</div>
-							<ul>
+							<ul class="grow-group01">
 								<li>
 									<div class="img_box"><img src="../../assets/img/grow/main_img1.png" alt="두산 연강원 이미지"/></div>
 									<div class="title">두산 연강원/DLI (Doosan Leadership Institute)</div>
