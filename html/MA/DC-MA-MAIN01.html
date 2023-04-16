@@ -27,15 +27,15 @@ $(document).ready(function() {
 
 	/*section1*/
 	var growTween1 = new TimelineMax({delay:0})
-			.fromTo(".grow-box .career_top_box", .8, {opacity: 0, y:30, ease: Power0.easeNone}, {opacity: 1, y:0, delay:0});
+			.fromTo(".grow-box .grow_top_box", .8, {opacity: 0, y:30, ease: Power0.easeNone}, {opacity: 1, y:0, delay:0});
 	var growScene1 = new ScrollMagic.Scene({triggerElement: '.grow-box',triggerHook: 1}).setTween(growTween1).reverse(false).addTo(controller);
 
 	var growTween2 = new TimelineMax({delay:0})
-			.fromTo(".grow-box .career_cont1 .top_title", .8, {opacity: 0, y:30, ease: Power0.easeNone}, {opacity: 1, y:0, delay:0});
+			.fromTo(".grow-box .grow_cont1 .top_title", .8, {opacity: 0, y:30, ease: Power0.easeNone}, {opacity: 1, y:0, delay:0});
 	var growScene2 = new ScrollMagic.Scene({triggerElement: '.grow-box',triggerHook: 1}).setTween(growTween2).reverse(false).addTo(controller);
 
 	var growTween3 = new TimelineMax({delay:0})
-			.staggerFromTo(".grow-box .career_cont1 ul li", 0.8, {opacity: 0, y: -30, ease: Power0.easeNone}, {opacity: 1, y: 0, delay:0}, 0.4);
+			.staggerFromTo(".grow-box .grow_cont1 ul li", 0.8, {opacity: 0, y: -30, ease: Power0.easeNone}, {opacity: 1, y: 0, delay:0}, 0.4);
 	var growScene3 = new ScrollMagic.Scene({triggerElement: '.grow-group01',triggerHook: 0.8}).setTween(growTween3).reverse(false).addTo(controller);
 	/** ================================= **/
 	/** E 20230414 두산의 성장 - 전용 JS 정의 **/
@@ -96,8 +96,8 @@ $(document).ready(function() {
 
 
 					<div class="section grow-box">
-						<div class="career_top_box">"사람은 두산의 지난 120년을 이끌어 온 힘 이자 향후 120년 이상의 성공을 지속할 수 있는 강력한 경쟁력의 원천이며, 사람에 대한 이러한 믿음은 두사의 경영전략의 중심입니다."</div>
-						<div class="career_cont1">
+						<div class="grow_top_box">"사람은 두산의 지난 120년을 이끌어 온 힘 이자 향후 120년 이상의 성공을 지속할 수 있는 강력한 경쟁력의 원천이며, 사람에 대한 이러한 믿음은 두사의 경영전략의 중심입니다."</div>
+						<div class="grow_cont1">
 							<div class="top_title">
 								<h1>성장을 위한 공간</h1>
 								<h2>성장을 향한 개인의 노력을 지원하기 위해 접근성이 높은 곳에 별도의 공간을 마련하였습니다.<br/> 집합 교육과 온라인 교육 참여, 팀 워크샵, 크고 작은 회의를 위해 자유롭게 사용됩니다.</h2>
@@ -112,6 +112,11 @@ $(document).ready(function() {
 									<div class="img_box"><img src="../../assets/img/grow/main_img2.png" alt="분당두산타워 공용공간 이미지"></div>
 									<div class="title">분당두산타워 공용공간 Open Innovation Center</div>
 									<div class="desc">미래를 만드는 두산 그룹의 창의 혁신 센터. 자유로운 소통과 만남, 아이디어의 발굴과 구체화가 가능한 창의적 분위기의 공간으로 구성원들의 학습과 창의적 컨텐츠 생산을 지원</div>
+									<div class="gu_btn_big_box gu_btn_arrow ">
+										<a href="#none" target="_blank" class="kr_sd_500" title="새창으로 열림">
+											<span>더보기</span>
+										</a>
+									</div>
 								</li>
 								<li>
 									<div class="img_box"><img src="../../assets/img/grow/main_img3.png" alt="동대문 두산타워 이미지"></div>
@@ -123,7 +128,34 @@ $(document).ready(function() {
 									<div class="title">두산에너빌리티 창원 Learning Center</div>
 									<div class="desc">두산에너빌리티 창원 본사에 위치한 교육 시설로 대강의장과 다양한 형태의 학습과 논의가 가능한 강의장, 회의실 공간 제공</div>
 								</li>
+							</ul>
+						</div>
+					</div>
 
+
+
+					<div class="section grow-box">
+						<div class="grow_cont1">
+							<div class="top_title">
+								<h1>성장을 위한 지원</h1>
+								<h2>탁월함을 향한 개인의 노력에 든든한 조력자가 될 수 있도록 전문화된 교육 프로그램과 성장의 기회를 제공합니다.</h2>
+							</div>
+							<ul class="grow-group01">
+								<li>
+									<div class="img_box"><img src="../../assets/img/grow/main_img5.png"></div>
+									<div class="title">두산 연강원/DLI (Doosan Leadership Institute)</div>
+									<div class="desc">서울에 위치한 그룹 연수원으로 그룹의 리더십 양성 기능을 담당. 두산의 구성원들이 교육을 통해 지식과 마음을 재충전할 수 있도록 최적의 교육 시설과 아름다운 정원 휴식 공간 제공</div>
+								</li>
+								<li>
+									<div class="img_box"><img src="../../assets/img/grow/main_img6.png"></div>
+									<div class="title">분당두산타워 공용공간 Open Innovation Center</div>
+									<div class="desc">미래를 만드는 두산 그룹의 창의 혁신 센터. 자유로운 소통과 만남, 아이디어의 발굴과 구체화가 가능한 창의적 분위기의 공간으로 구성원들의 학습과 창의적 컨텐츠 생산을 지원</div>
+									<div class="gu_btn_big_box gu_btn_arrow ">
+										<a href="#none" target="_blank" class="kr_sd_500" title="새창으로 열림">
+											<span>더보기</span>
+										</a>
+									</div>
+								</li>
 							</ul>
 						</div>
 					</div>
