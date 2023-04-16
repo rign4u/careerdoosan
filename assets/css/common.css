@@ -29002,6 +29002,22 @@ h3.ex + .dbs_q_box {
 
 /* ================================== Tablet css ================================== */
 @media all and (max-width: 1080px){
+
+
+	.grow_top_box {
+		padding: 24px 10%;
+		background: #f7f7f7;
+		line-height: 28px;
+		text-align: center;
+		font-size: 18px;
+		color: #646464;
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+	.grow-box {
+		margin-bottom: 170px;
+	}
+
 	.grow_cont1 ul>li{margin-bottom:51px; margin-right:33px;width:calc(50% - 33px);}
 	.grow_cont1 ul>li .title{font-size: 18px;line-height: 28px; margin: 22px 0 10px;}
 	.grow_cont1 ul>li .desc{font-size: 14px;line-height: 24px;}
@@ -29014,6 +29030,95 @@ h3.ex + .dbs_q_box {
 
 /* ================================== Mobile css ================================== */
 @media all and (max-width: 766px){
+	.grow_top_box {
+		padding: 24px 10%;
+		background: #f7f7f7;
+		line-height: 24px;
+		text-align: center;
+		font-size: 16px;
+		color: #646464;
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+	.grow_cont1 .top_title h1 {
+		font-size: 22px;
+		line-height: 26px;
+		margin-bottom: 15px
+	}
+	.grow_cont1 .top_title h2 {
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+	.grow-box {
+		margin-bottom: 130px;
+	}
+
+	.grow_cont2 .top_title h1 {
+		font-size: 22px;
+		line-height: 26px;
+		margin-bottom: 15px
+	}
+	.grow_cont2 .top_title h2 {
+		font-size: 14px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+
+
+
+	.grow_cont2 ul>li:nth-last-child(2) {
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
+	.grow_cont2 ul>li:nth-last-child(1) {
+		margin-bottom: 40px;
+		margin-top: 20px;
+	}
+
+	.growpop_content h2 {
+		font-size: 18px;
+		line-height: 26px;
+		padding-bottom: 15px;
+		font-weight: 800;
+	}
+	.growpop_content .cont-tit {
+		font-size: 16px;
+		font-weight: 800;
+		padding: 5px 0 10px 0;
+	}
+
+	.cont-box .table_cont th {
+		border-bottom: 1px solid #e6e6e6;
+		padding: 8px 8px;
+		font-size: 16px;
+	}
+	.cont-box .table_cont td {
+		border-right: 1px solid #e6e6e6;
+		padding: 16px 15px;
+		font-size: 14px;
+	}
+
+
+	.growpop_content .cont-txt {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.growpop_content .cont-memo ul li span {
+		padding: 0 5px;
+		padding-left: 15px;
+		line-height: 18px;
+		position: relative;
+		font-size: 14px;
+		color: #666666;
+	}
+
+
+
+
+
+
+
 	.grow_cont1 ul>li{margin-bottom:60px;width:100%; margin-right:0;}
 	.grow_cont1 ul>li:nth-last-child(2){margin-bottom:60px;}
 	.grow_cont1 ul>li .title{font-size:18px; line-height:26px;}
