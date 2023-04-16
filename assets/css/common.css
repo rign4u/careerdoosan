@@ -28689,27 +28689,34 @@ h3.ex + .dbs_q_box {
 
 
 
+.career_top_box {width: 100%;
+	padding: 55px 215px;
+	background: #f7f7f7;
+	line-height: 36px;
+	text-align: center;
+	font-size: 22px;
+	color: #646464;
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
 
 
+.career_cont1{position:relative;}
+.career_cont1 ul{font-size:0;}
 
-
-
-.career_m_box1{position:relative;}
-.career_m_box1 ul{font-size:0;}
-
-.career_m_box1 ul > li {
+.career_cont1 ul > li {
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 56px;
 	width: calc(50% - 28px);
 	margin-bottom: 80px;
 }
-.career_m_box1 ul>li:last-child,.career_m_box1 ul>li:nth-last-child(2){margin-bottom:0;}
-.career_m_box1 ul>li:nth-child(2n){margin-right:0;}
-.career_m_box1 ul>li img{width:100%;}
-.career_m_box1 ul>li .title{font-size:24px; line-height:36px; margin:28px 0 10px;}
-.career_m_box1 ul>li .desc{font-size:18px; line-height:32px; color:#444;}
-.career_m_box1 ul>li .gu_btn_sm_box{text-align:left; margin-top:32px;}
+.career_cont1 ul>li:last-child,.career_cont1 ul>li:nth-last-child(2){margin-bottom:0;}
+.career_cont1 ul>li:nth-child(2n){margin-right:0;}
+.career_cont1 ul>li img{width:100%;}
+.career_cont1 ul>li .title{ line-height:36px; margin:28px 0 10px;}
+.career_cont1 ul>li .desc{font-size:18px; line-height:32px; color:#444;}
+.career_cont1 ul>li .gu_btn_sm_box{text-align:left; margin-top:32px;}
 
 
 
@@ -28725,19 +28732,19 @@ h3.ex + .dbs_q_box {
 
 /* ================================== Tablet css ================================== */
 @media all and (max-width: 1080px){
-	.career_m_box1 ul>li{margin-bottom:51px; margin-right:33px;width:calc(50% - 33px);}
-	.career_m_box1 ul>li .title{font-size: 18px;line-height: 28px; margin: 22px 0 10px;}
-	.career_m_box1 ul>li .desc{font-size: 14px;line-height: 24px;}
+	.career_cont1 ul>li{margin-bottom:51px; margin-right:33px;width:calc(50% - 33px);}
+	.career_cont1 ul>li .title{font-size: 18px;line-height: 28px; margin: 22px 0 10px;}
+	.career_cont1 ul>li .desc{font-size: 14px;line-height: 24px;}
 }
 
 /* ================================== Mobile css ================================== */
 @media all and (max-width: 766px){
-	.career_m_box1 ul>li{margin-bottom:60px;width:100%; margin-right:0;}
-	.career_m_box1 ul>li:nth-last-child(2){margin-bottom:60px;}
-	.career_m_box1 ul>li .title{font-size:18px; line-height:26px;}
-	.career_m_box1 ul>li .gu_btn_sm_box{margin-top:35px;}
+	.career_cont1 ul>li{margin-bottom:60px;width:100%; margin-right:0;}
+	.career_cont1 ul>li:nth-last-child(2){margin-bottom:60px;}
+	.career_cont1 ul>li .title{font-size:18px; line-height:26px;}
+	.career_cont1 ul>li .gu_btn_sm_box{margin-top:35px;}
 }
 
 @media all and (max-width: 323px){
-	.career_m_box1 ul>li .gu_btn_sm_box a > span{letter-spacing:-0.1px;}
+	.career_cont1 ul>li .gu_btn_sm_box a > span{letter-spacing:-0.1px;}
 }
