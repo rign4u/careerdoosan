@@ -28751,7 +28751,9 @@ h3.ex + .dbs_q_box {
 
 
 
-
+.grow-group03 {
+	margin-top: 25px;
+}
 
 
 
@@ -28772,7 +28774,7 @@ h3.ex + .dbs_q_box {
 .growpop_section:last-child {
 	padding: 20px 10px 20px 10px;
 }
-.growpop_content h2 {font-size:21px;padding-bottom: 15px;}
+.growpop_content h2 {font-size:21px;padding-bottom: 15px; font-weight: 800;}
 
 .growpop_content ul li {padding: 15px 0 35px 0;}
 
@@ -28976,8 +28978,9 @@ h3.ex + .dbs_q_box {
 
 
 
-
-
+.wline > td {
+	border-bottom: 1px solid #ddd;
+}
 
 
 
