@@ -28760,6 +28760,44 @@ h3.ex + .dbs_q_box {
 
 
 
+.growpop_section {
+	padding: 20px 10px 10px 10px;
+}
+.growpop_content h2 {font-size:20px;padding-bottom: 15px;}
+
+.growpop_content ul li {padding: 15px 0;}
+
+.growpop_content .cont-tit {font-size:19px; font-weight: 700;padding: 5px 0;}
+.growpop_content .cont-txt {font-size:18px; line-height:19px; padding: 6px 0;}
+
+.cont-box .table_cont {
+	position: relative;
+	width: 100%;
+	border-top: 2px solid #1478d8;
+	border-bottom: 1px solid #e6e6e6;
+	text-align: center;
+}
+.cont-box .table_cont th {
+	border-bottom: 1px solid #e6e6e6;
+	padding: 15px 15px;
+	font-size: 18px;
+}
+.cont-box .table_cont td {
+	border-right: 1px solid #e6e6e6;
+	padding: 14px 10px;
+}
+.cont-box .table_cont td:nth-child(2) {
+	border-right: 0 solid #e6e6e6;
+	text-align: left;
+	padding-left: 30px;
+	line-height: 26px;
+}
+
+
+
+
+
+
 
 /*공통버튼*/
 
@@ -28878,17 +28916,6 @@ h3.ex + .dbs_q_box {
 		padding-right: 17px;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
