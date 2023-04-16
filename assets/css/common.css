@@ -28706,18 +28706,19 @@ h3.ex + .dbs_q_box {
 .career_cont1 ul > li {
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 56px;
-	width: calc(50% - 28px);
+	margin-right: 100px;
+	width: calc(50% - 50px);
 	margin-bottom: 80px;
 }
 .career_cont1 ul>li:last-child,.career_cont1 ul>li:nth-last-child(2){margin-bottom:0;}
 .career_cont1 ul>li:nth-child(2n){margin-right:0;}
 .career_cont1 ul>li img{width:100%;}
 .career_cont1 ul>li .title{font-size:24px; line-height:36px; margin:28px 0 10px;font-weight: 800;}
-.career_cont1 ul>li .desc{font-size:18px; line-height:32px; color:#444;}
+.career_cont1 ul>li .desc{font-size:17px; line-height:32px; color:#444;padding-right: 10px}
 .career_cont1 ul>li .gu_btn_sm_box{text-align:left; margin-top:32px;}
 
-
+.career_cont1 .top_title h1 {font-size:35px; font-weight: 800; margin-bottom: 35px;}
+.career_cont1 .top_title h2 {font-size:20px; line-height: 36px; margin-bottom: 90px;}
 
 
 
